@@ -7,3 +7,4 @@ E:\Development\Project Repo\Practice\CountingKs\CountingKs.Data\bin\Debug\Entity
 E:\Development\Project Repo\Practice\CountingKs\CountingKs.Data\bin\Debug\EntityFramework.SqlServer.xml
 E:\Development\Project Repo\Practice\CountingKs\CountingKs.Data\obj\Debug\CountingKs.Data.dll
 E:\Development\Project Repo\Practice\CountingKs\CountingKs.Data\obj\Debug\CountingKs.Data.pdb
+E:\Development\Project Repo\Practice\CountingKs\CountingKs.Data\obj\Debug\CountingKs.Data.csprojResolveAssemblyReference.cache
