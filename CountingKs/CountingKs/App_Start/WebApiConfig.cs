@@ -5,6 +5,8 @@ using System.Net.Http.Formatting;
 using System.Web.Http;
 using CountingKs.Models;
 using Newtonsoft.Json.Serialization;
+using CountingKs.Filters;
+using WebApiContrib.Formatting.Jsonp;
 
 namespace CountingKs
 {
@@ -44,8 +46,16 @@ namespace CountingKs
 
             config.Formatters.Add(new BrowserJsonFormatter());
 
+#if !DEBUG
+            config.Filters.Add(new RequireHttpsAttribute());
+#endif
+
             var jsonFormatter = config.Formatters.OfType<JsonMediaTypeFormatter>().FirstOrDefault();
             jsonFormatter.SerializerSettings.ContractResolver = new CamelCasePropertyNamesContractResolver();
+
+            //Add support JSONP
+            var formatter = new JsonpMediaTypeFormatter(jsonFormatter);
+            config.Formatters.Insert(0, formatter);
 
             // Uncomment the following line of code to enable query support for actions with an IQueryable or IQueryable<T> return type.
             // To avoid processing unexpected or malicious queries, use the validation settings on QueryableAttribute to validate incoming queries.
