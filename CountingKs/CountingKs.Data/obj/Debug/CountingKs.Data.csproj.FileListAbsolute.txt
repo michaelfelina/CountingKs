@@ -2,6 +2,8 @@ E:\Development\Project Repo\Practice\CountingKs\CountingKs.Data\bin\Debug\Counti
 E:\Development\Project Repo\Practice\CountingKs\CountingKs.Data\bin\Debug\CountingKs.Data.dll
 E:\Development\Project Repo\Practice\CountingKs\CountingKs.Data\bin\Debug\CountingKs.Data.pdb
 E:\Development\Project Repo\Practice\CountingKs\CountingKs.Data\bin\Debug\EntityFramework.dll
+E:\Development\Project Repo\Practice\CountingKs\CountingKs.Data\bin\Debug\EntityFramework.SqlServer.dll
 E:\Development\Project Repo\Practice\CountingKs\CountingKs.Data\bin\Debug\EntityFramework.xml
+E:\Development\Project Repo\Practice\CountingKs\CountingKs.Data\bin\Debug\EntityFramework.SqlServer.xml
 E:\Development\Project Repo\Practice\CountingKs\CountingKs.Data\obj\Debug\CountingKs.Data.dll
 E:\Development\Project Repo\Practice\CountingKs\CountingKs.Data\obj\Debug\CountingKs.Data.pdb
