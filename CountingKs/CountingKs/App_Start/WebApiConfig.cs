@@ -44,6 +44,12 @@ namespace CountingKs
                 defaults: new { controller = "diarysummary" }
             );
 
+            config.Routes.MapHttpRoute(
+               name: "Token",
+               routeTemplate: "api/token",
+               defaults: new { controller = "token" }
+           );
+
             config.Formatters.Add(new BrowserJsonFormatter());
 
 #if !DEBUG

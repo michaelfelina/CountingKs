@@ -44,7 +44,7 @@ namespace CountingKs.Models
             };
         }
 
-        internal DiaryEntryModel Create(DiaryEntry d)
+        public DiaryEntryModel Create(DiaryEntry d)
         {
             return new DiaryEntryModel()
             {
@@ -60,7 +60,16 @@ namespace CountingKs.Models
             };
         }
 
-        internal DiaryModel Create(Diary d)
+        public AuthTokenModel Create(AuthToken authToken)
+        {
+            return new AuthTokenModel()
+            {
+                Token = authToken.Token,
+                Expiration = authToken.Expiration
+            };
+        }
+
+        public DiaryModel Create(Diary d)
         {
             return new DiaryModel()
             {
